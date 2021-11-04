@@ -503,11 +503,10 @@ lorem
    
    <!-- break-word 效果 -->
    这是一个网址
-   http://www.
-   baidu.com
+   http://www.baidu.com
    ```
-
    
+
 
 #### 文本外观属性
 
@@ -1382,10 +1381,7 @@ a:active {
 
 ### 2.4.1 初识盒子模型
 
-> **概述：** 把HTML页面中的元素看作是一个矩形的盒子。每个矩形都由元素的内容(content)、内边距(padding)、边框(border) 和 外边距(margin) 组成
-
-
-
+> **概述：** 把HTML页面中的元素看作是一个矩形的盒子。每个矩形都由元素的内容(content)、内边距(padding)、边框(border) 和 外边距(margin) 组成。
 
 ```html
 <head>
