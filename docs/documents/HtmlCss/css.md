@@ -132,9 +132,9 @@
 
 ### 2.2.3 更改网站标题栏图标
 
-~~~html
+```html
 <link rel="SHORICUI ICON" href="图标地址">		<!-- 一般采用 icon 格式图片文件 -->
-~~~
+```
 
 
 
@@ -294,7 +294,7 @@ h2 {font-size: 36px; color: red; }
 
 > 交集选择器又两个选择器构成，其中第一个为标签选择器，第二个为class选择器，两个选择器之间不能有空格，**使标签定位更加精准**
 
-~~~css
+```css
 语法格式：
 标记名.类名 {属性1:属性值1; 属性2:属性值2; 属性3:属性值3; }
 标记名#id名 {属性1:属性值1; 属性2:属性值2; 属性3:属性值3; }
@@ -310,7 +310,7 @@ h2 {font-size: 36px; color: red; }
     <h3> 普通标题 </h3>
     <h3 class="title"> 类标题 </h3>
 </body>
-~~~
+```
 
 
 
@@ -345,9 +345,9 @@ h2 {font-size: 36px; color: red; }
 
 **lorem: 自动生成一段英文**
 
-~~~html
+```html
 lorem
-~~~
+```
 
 
 
@@ -530,9 +530,9 @@ lorem
 
 2. **text-indent 首行缩进**
 
-   ~~~css
+   ```css
    text-indent: 35;	/* 距离 */
-   ~~~
+   ```
 
    
 
@@ -546,7 +546,7 @@ lorem
 
 4. **overflow: 标示对象内溢出文本**
 
-   ![8](assets/8.png)
+   ![8](./assets/8.png)
 
    text-overflow: 文本溢出显示省略还
 
@@ -570,19 +570,19 @@ lorem
 
 5. **多行文本居中对齐**
 
-   ~~~html
+   ```html
    <div>
        <p></p>
        <p></p>
    </div>
-   ~~~
+   ```
 
-   ~~~css
+   ```css
    div {
        display: table-celll;
        vertical-algin: middle;
    }
-   ~~~
+   ```
 
    
 
@@ -646,7 +646,7 @@ lorem
 
 11. **white-space: 空白符处理**
 
-   >使用 HTML 制作网页时，不论源代码中有多少空格，在浏览器中只会显示一个字符的空白，使用 white-space 属性可设置空白符的处理方式
+   > 使用 HTML 制作网页时，不论源代码中有多少空格，在浏览器中只会显示一个字符的空白，使用 `white-space` 属性可设置空白符的处理方式
 
    **常用属性值：**
 
@@ -693,13 +693,13 @@ lorem
 
 文本内容多时，有时会需要强制
 
-~~~css
+```css
 /* 强制换行：解决长单词默认一行显示 */
 work-break: break-all;
 
 /* 强制不换行：让中文、英文 在一行中显示 */
 white-space: nowrap;
-~~~
+```
 
 
 
@@ -1265,7 +1265,7 @@ logo.jpg 这是一个标题
 这是一个标题
 ```
 
-~~~html
+```html
 <!-- 为了方便大盒子不用计算总高度，使用 after伪类来撑起来大盒子的高度 -->
 <html>
     <head>
@@ -1292,7 +1292,7 @@ logo.jpg 这是一个标题
         </div>
     </body>
 </html>
-~~~
+```
 
 
 
@@ -1300,12 +1300,12 @@ logo.jpg 这是一个标题
 
 > 修改被选中的文本的部分样式
 
-~~~css
+```css
 input::selection {
     background: #f00;
     color: #fff;
 }
-~~~
+```
 
 
 
@@ -1315,13 +1315,13 @@ input::selection {
 >
 > **简单理解：设置input 标签 中 placeholder 提示信息的样式**
 
-~~~css
+```css
 input::placeholder {
 	background: #f00;
     color: #fff;
     font-size: 12px;
 }
-~~~
+```
 
 
 
@@ -1335,14 +1335,14 @@ input::placeholder {
 >
 > ​	实际开发一般结合 :after 使用
 
-~~~css
+```css
 p#uName:focus-within::after {
     content: '6～18个字符，可使用字母、数字、下划线，需要以字母开头';
     color: #616161;
     font-size: 12px;
     padding-left: 5px;
 }
-~~~
+```
 
 
 
@@ -1350,7 +1350,7 @@ p#uName:focus-within::after {
 
 > 链接伪类又称 "伪类选择器"，定义超链接时，经常要为超链接指定不同的状态，使得超链接在单击前、单击后 和 鼠标悬停时的样式不同
 
-|   超链接标记 <a> 的伪类    |             含义             |
+|   超链接标记 `<a>` 的伪类    |             含义             |
 | :------------------------: | :--------------------------: |
 |  a:link{ CSS 样式规则; }   | 未访问时的超链接（初始状态） |
 | a:visited{ CSS 样式规则; } |      访问后超链接的状态      |
@@ -1376,12 +1376,11 @@ a:active {
 ---
 
 
-
 ## 第四节：CSS 盒子模型
 
 ### 2.4.1 初识盒子模型
 
-> **概述：** 把HTML页面中的元素看作是一个矩形的盒子。每个矩形都由元素的内容(content)、内边距(padding)、边框(border) 和 外边距(margin) 组成。
+> **概述：** 把 HTML 页面中的元素看作是一个矩形的盒子。每个矩形都由元素的内容(content)、内边距(padding)、边框(border) 和 外边距(margin) 组成。
 
 ```html
 <head>
@@ -1400,7 +1399,7 @@ a:active {
 </body>
 ```
 
-1. **div 标记**
+1. **div 标记** 
 
    > **概述：**div 是 division 的缩写，意思是 分割、区域。div 标记是一个区块容器的标记，可以将网页分割为独立的、不同的部分，以实现网页的规划和布局，可以设置外边距、内边距、宽 和 高，内部可以容纳 段落、标题、还可以嵌套多层 div
    >
@@ -1431,7 +1430,7 @@ a:active {
 
    
 
-2. **盒子的宽、高**
+2. **盒子的宽、高** 
 
    > 网页是由多个盒子排列而成的，每个盒子都有固定的大小
 
@@ -2056,11 +2055,11 @@ li {
 
 #### 补充：价格栏定义
 
-~~~html
+```html
 <p>
     <i>￥</i> <span></span>69<samil>.00</samil>
 </p>
-~~~
+```
 
 
 
@@ -2453,12 +2452,12 @@ div {
 >
 > sticky 必须设置偏移量才能生效，偏移量可以是负值
 
-~~~css
+```css
 img {
     position: sticky;
     top: 0;
 }
-~~~
+```
 
 
 
@@ -2677,17 +2676,17 @@ display: none;
 
 > autocomplete="off" 属性值为 off 时，禁用自动记忆功能
 
-~~~css
+```css
 <input type="text" autocomplete="off" />
-~~~
+```
 
 ==浏览器记住密码后，密码框自动填充功能禁用== 
 
 >**autocomplete="new-password"**
 
-~~~html
+```html
 <input type="password" autocomplete="new-password" />
-~~~
+```
 
 
 
@@ -3259,11 +3258,11 @@ display: none;
 
 ### 2.7.1 表格设置合并边框模型
 
-~~~css
+```css
 table {
   border-collapse:collapse;
 }
-~~~
+```
 
 
 
@@ -3386,9 +3385,9 @@ table {
 
 #### 音、视频中的 source 元素
 
-> 为了使音、视频在浏览器中正常播放，往往需要提供多种格式的音、视频文件。在 HTML5 中，运用 source 元素可以为 video 元素或 audio 元素提供多个备份文件
+> 为了使音、视频在浏览器中正常播放，往往需要提供多种格式的音、视频文件。在 HTML5 中，运用 source 元素可以为 `<video>` 元素或 audio 元素提供多个备份文件
 
-<img src="assets/音、视频支持格式.jpg" alt="音、视频支持格式" style="zoom: 50%;" />
+![233423423423432](./assets/233423423423432.jpg)
 
 **src 用于指定媒体文件的 url 地址，type 用于指定媒体文件的类型**
 
@@ -4224,7 +4223,7 @@ div {
 >
 > ​	both：让元素等待状态显示动画第一帧的样式，让元素结束状态保持动画最后一帧的样式
 
-~~~css
+```css
 .box {
     width: 200px;
     height: 200px;
@@ -4247,7 +4246,7 @@ div {
         transform: rotate(80deg);
     }
 }
-~~~
+```
 
 
 
@@ -4276,45 +4275,46 @@ animation: mymove 5s linear 2s 3 normal;		/* mymove 动画，时长5秒，均速
 
 默认从上到下
 
-~~~css
+```css
 background: linear-graient(#f00, #0f0, #00f);
-~~~
+```
 
 从左到右
 
-~~~css
+```css
 background: linear-graient(to right, #f00, #0f0, #00f);
-~~~
+```
 
 从右到左
 
-~~~css
+```css
 background: linear-graient(to left, #f00, #0f0, #00f);
-~~~
+```
 
 从下到上
 
-~~~css
+```css
 background: linear-graient(to bottom, #f00, #0f0, #00f);
-~~~
+```
 
 倾斜角度
 
-~~~css
+```css
 background: linear-graient(45deg, #f00, #0f0, #00f);
-~~~
+```
 
 
 
 渐变大小
 
-~~~css
+```css
 background: linear-graient(400px at left, #f00, #0f0);
-~~~
+```
 
 渐变大小
 
-~~~css
+```css
 background: linear-graient(#f00 5%, #0f0 15%, #0f0 60%);
-~~~
+```
+
 
