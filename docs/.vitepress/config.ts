@@ -45,9 +45,14 @@ export default {
         items: [
           {
             text: 'Html & CSS',
-            link: '/documents/HtmlCss/html',
+            link: '/documents/HtmlCss/introduction',
             activeMatch: '^/config/',
-          }
+          },
+          {
+            text: 'JavaScript & jQuery',
+            link: '/documents/javaScript/javaScript',
+            activeMatch: '^/config/',
+          },
         ]
       },
       {
@@ -97,12 +102,24 @@ function getGuideSidebar() {
       ]
     },
     //#region 暂不展示
-    // {
-    //   text: 'javaScript',
-    //   children: [
-    //     { text: 'Get Started', link: '/documents/javaScript/javaScript' },
-    //   ]
-    // }
+    {
+      text: 'javaScript',
+      children: [
+        { text: 'Get Started', link: '/documents/javaScript/javaScript' },
+      ]
+    },
+    {
+      text: 'jQuery',
+      children: [
+        { text: 'Get Started', link: '/documents/javaScript/jQuery' },
+      ]
+    },
+    {
+      text: 'javaScript高级',
+      children: [
+        { text: 'Get Started', link: '/documents/javaScript/javaScript-advanced' },
+      ]
+    },
     //#endregion
   ]
 }
