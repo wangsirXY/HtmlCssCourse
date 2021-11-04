@@ -33,7 +33,7 @@
 > 3. **call 的继承性**
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 函数名.call(对象, 实参1, 实参2... 实参n);
 ~~~
 
@@ -106,7 +106,7 @@ console.log(Math.max.apply(Array, arr));
 > **如果只是想改变 this 指向，并且不想调用这个函数的时候，可以使用bind**
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 函数名.bind(对象)
 
 
@@ -348,7 +348,7 @@ fn1();	// fn1() 变量在fn1()中，fn1() 就是闭包函数
 ### 立即执行函数
 
 ~~~javascript
-/ 语法格式
+// 语法格式
 // ()();
 
 (
@@ -489,7 +489,7 @@ console.log(arrNew);
 > 返回值：一个新的数组，其中包含子数组元素。
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 flat(depth);
 // depth：指定嵌套数组结构应展平至多深的深度级别。默认为1
 
@@ -1124,7 +1124,7 @@ list.init();
 > ==ES6 中没有变量提升，所以必须要先定义类，才能通过类实例化对象。==
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 class Name {
     // calss body
 }
@@ -1143,7 +1143,7 @@ var xx = new Name();
 > - **如果没有显示定义，类内部会自动给我们创建一个 constructor()** 
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 class Star {
     constructor(uname, age) {
         this.uname = uname;
@@ -1166,7 +1166,7 @@ console.log(bz.age);
 
 #### 类添加方法
 
->语法格式：
+> 语法格式：
 >
 >- 创建类 类名后面不加小括号；生成实例。
 >- 类名后加小括号
@@ -1174,7 +1174,7 @@ console.log(bz.age);
 >- 类中的方法都是挂载到 Star.prototype 上的
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 class Star {
     // 类的共有属性放在 constructor 里面
     constructor (uname) {
@@ -1234,7 +1234,7 @@ var star = new Star ({
 > 子类可以继承父类的属性和方法。
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 calss Father {
     constructor() {
         
@@ -1265,7 +1265,7 @@ son.money();	// 100
 >super 关键字 用于访问和调用对象父类上的函数。可以调用父类的构造函数，也可以调用父类的普通函数。
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 class Father {
     constructor(x, y) {
         this.x = x;
@@ -1374,7 +1374,7 @@ son.sub();	// 2
 #### 面向对象添加静态属性、方法
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 实例对象.属性名
 实例对象.方法名
 
@@ -1457,7 +1457,7 @@ Star.age
 > / / 中的数据，不论数据类型，都不要加引号
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 new RegExp(/正则表达式规则/);
 
 // 利用 RegExp 对象来创建正则表达式
@@ -1474,7 +1474,7 @@ var reg1 = /abc/;
 > test() 方法的返回值是 true || false
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 正则变量名.test('要检索的字符串');
 
 console.log( reg.test('bca') );
@@ -1698,7 +1698,7 @@ console.log(love);	// 干饭
 ## 箭头函数
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 var fn = (属性1, 属性2) => {
     return 属性1 + 属性2;
 }
@@ -1779,7 +1779,7 @@ fn(10, 20, 30, 40, '张三');
 > 扩展运算符可以将数组或者对象转为用逗号分隔的参数序列
 >
 > ~~~javascript
-> / 语法格式：
+> // 语法格式：
 > ... 变量名
 > ~~~
 
@@ -1855,7 +1855,7 @@ Object.is(NaN, NaN);	// true
 > 根据条件筛选数据
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 数组.find(回调函数);
 ~~~
 
@@ -1876,7 +1876,7 @@ var arr = [
 >查找数组中**第一个满足条件项的下标** 
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 数组.find(回调函数);
 ~~~
 
@@ -1975,7 +1975,7 @@ console.log(str.startsWith('ld'));	// true
 > 作用：将字符串重复指定次数，返回一个新字符串
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 字符串.repeat(次数)；
 
 
@@ -2139,7 +2139,7 @@ var r = {
 > **重复的属性，后面会覆盖前面的属性**
 
 ~~~javascript
-/ 语法格式：
+// 语法格式：
 Object.assign(目标对象, 待拷贝的对象1, 待拷贝的对象2, 待拷贝的对象3, );
 ~~~
 

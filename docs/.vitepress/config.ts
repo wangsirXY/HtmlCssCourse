@@ -49,8 +49,18 @@ export default {
             activeMatch: '^/config/',
           },
           {
-            text: 'JavaScript & jQuery',
+            text: 'JavaScript',
             link: '/documents/javaScript/javaScript',
+            activeMatch: '^/config/',
+          },
+          {
+            text: 'jQuery',
+            link: '/documents/javaScript/jQuery',
+            activeMatch: '^/config/',
+          },
+          {
+            text: 'javaScript高级',
+            link: '/documents/javaScript/javaScript-advanced',
             activeMatch: '^/config/',
           },
         ]
@@ -71,7 +81,7 @@ export default {
           }
         ]
       },
-      { text: 'GitHub', link: 'https://github.com/', activeMatch: '^/$|^/guide/' },
+      { text: 'GitHub', link: 'https://github.com/wangsirXY/', activeMatch: '^/$|^/guide/' },
     ],
     sidebar: {
       '/': getGuideSidebar()
