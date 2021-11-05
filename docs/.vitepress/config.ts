@@ -50,7 +50,7 @@ export default {
           },
           {
             text: 'JavaScript',
-            link: 'https://wangsirxy.github.io/JavaScript/',
+            link: 'https://WangSirXY.github.io/javaScriptCourse',
             activeMatch: '^/config/',
           },
           {
