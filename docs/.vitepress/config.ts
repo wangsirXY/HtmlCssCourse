@@ -60,7 +60,7 @@ export default {
           },
           {
             text: 'jQuery',
-            link: 'https://wangsirxy.github.io/jQuery/',
+            link: 'https://wangsirxy.github.io/jQueryCourse/',
             activeMatch: '^/config/',
           },
         ]
