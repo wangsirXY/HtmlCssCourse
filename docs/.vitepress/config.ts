@@ -35,8 +35,8 @@ export default {
     nav: [
       { text: 'Guide', link: '/', activeMatch: '^/$|^/guide/' },
       {
-        text: 'Config Reference',
-        link: '/config/basics',
+        text: '主页',
+        link: 'http://wangsir.info/',
         activeMatch: '^/config/',
       },
       {
@@ -50,17 +50,17 @@ export default {
           },
           {
             text: 'JavaScript',
-            link: '/documents/javaScript/javaScript',
+            link: 'https://wangsirxy.github.io/JavaScript/',
+            activeMatch: '^/config/',
+          },
+          {
+            text: 'JavaScript高级',
+            link: 'https://wangsirxy.github.io/javaScriptAdvancedCourse/',
             activeMatch: '^/config/',
           },
           {
             text: 'jQuery',
-            link: '/documents/javaScript/jQuery',
-            activeMatch: '^/config/',
-          },
-          {
-            text: 'javaScript高级',
-            link: '/documents/javaScript/javaScript-advanced',
+            link: 'https://wangsirxy.github.io/jQuery/',
             activeMatch: '^/config/',
           },
         ]
@@ -93,7 +93,7 @@ function getGuideSidebar() {
   return [
     /** 一个对象是一个侧边栏标题
      * text：标题   children：二级菜单栏   link：地址 */
-     {
+    {
       text: '引言',
       children: [
         { text: 'Get Started', link: '/documents/HtmlCss/introduction' },
@@ -110,26 +110,6 @@ function getGuideSidebar() {
       children: [
         { text: 'Get Started', link: '/documents/HtmlCss/css' },
       ]
-    },
-    //#region 暂不展示
-    {
-      text: 'javaScript',
-      children: [
-        { text: 'Get Started', link: '/documents/javaScript/javaScript' },
-      ]
-    },
-    {
-      text: 'jQuery',
-      children: [
-        { text: 'Get Started', link: '/documents/javaScript/jQuery' },
-      ]
-    },
-    {
-      text: 'javaScript高级',
-      children: [
-        { text: 'Get Started', link: '/documents/javaScript/javaScript-advanced' },
-      ]
-    },
-    //#endregion
+    }
   ]
 }
